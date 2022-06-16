@@ -85,6 +85,12 @@ function setup() {
 }
 
 function draw() {
+  if(p1health < 0){
+    p1health = 0
+  }
+  if(p2health < 0){
+    p2health = 0
+  }
   background(background0);
   edges = createEdgeSprites()
   helicopter.collide(edges)
